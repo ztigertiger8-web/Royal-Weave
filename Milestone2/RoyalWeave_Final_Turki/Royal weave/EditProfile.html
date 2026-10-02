@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="profile-page-body">
+
+    <img src="images/logo2.png" alt="Logo" width="130" class="profile-main-logo">
+    
+    <h2 class="update-title">Update Your Information</h2>
+    <p class="update-subtitle">Keep your contact details up to date for better service.</p>
+
+    <div class="profile-card-box">
+        <form action="MainFrame.html">
+            <p>Your Name:<br>
+                <input type="text" name="name" placeholder="Abdulmohsen"  class="text-input-style">
+            </p>
+            <p>Email Address:<br>
+                <input type="email" name="u_email" placeholder="Abdulmohsen@iau.edu.sa"  class="text-input-style">
+            </p>
+
+            <p>Phone Number:<br>
+                <input type="tel" name="u_phone" placeholder="05xxxxxxxx"  class="text-input-style">
+            </p>
+
+            <p>Location (City):<br>
+                <select name="u_city" class="city-select-style">
+                    <option value="Dammam" selected>Dammam</option>
+                    <option value="Al-Khobar">Al-Khobar</option>
+                    <option value="Riyadh">Riyadh</option>
+                    <option value="Jeddah">Jeddah</option>
+                </select>
+            </p>
+
+            <p>New Password (Optional):<br>
+                <input type="password" name="u_pass" placeholder="Leave empty to keep current" class="text-input-style">
+            </p>
+
+            <div class="save-button-area">
+                <input type="submit" value="Save Changes" class="save-data-button">
+            </div>
+        </form>
+    </div>
+
+    <p class="bottom-security-text">Royal Weave - Security & Privacy Guaranteed</p>
+
+</body>
+</html>

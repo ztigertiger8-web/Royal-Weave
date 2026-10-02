@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page-body">
+    <img src="images/logo2.png" alt="Logo" width="150">
+    <h1 style="margin-top: 20px;">Create New Account</h1>
+    <div class="auth-main-box">
+        <form action="MainFrame.html">
+            <p>Name:<br> 
+                <input type="text" name="name" placeholder="Abdulmohsen"  class="signup-input-field" required>
+            </p>
+            <p>Email Address:<br> 
+                <input type="email" name="email" placeholder="xyz@gmail.com"  class="signup-input-field" required>
+            </p>
+            <p>Phone Number:<br> 
+                <input type="tel" name="phone" placeholder="05xxxxxxxx"  class="signup-input-field" required>
+            </p>
+            <p>Select City:<br> 
+                <select name="city"  class="signup-select-field" required>
+                    <option value="" disabled selected>Choose your city</option>
+                    <option value="Dammam">Dammam</option>
+                    <option value="Al-Khobar">Al-Khobar</option>
+                    <option value="Riyadh">Riyadh</option>
+                    <option value="Jeddah">Jeddah</option>
+                </select>
+            </p>
+            <p>Password:<br> 
+                <input type="password" name="password"  class="signup-input-field" required>
+            </p>
+            <div style="text-align: center; margin-top: 25px;">
+                <input type="submit" value="Complete Registration" class="complete-register-button">
+            </div>
+        </form>
+    </div>
+    <p style="margin-top: 25px;">
+        Already have an account? <a href="SignIn.html" style="color: #1B263B; font-weight: bold; text-decoration: none;">Login here</a>
+    </p>
+</body>
+</html>

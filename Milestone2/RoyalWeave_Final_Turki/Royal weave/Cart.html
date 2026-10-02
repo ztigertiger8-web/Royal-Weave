@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="cart-page-body">
+
+    <div class="header-center">
+        <img src="images/logo2.png" alt="Logo" width="120">
+        <h1 class="shopping-cart-title">Shopping Cart</h1>
+    </div>
+
+    <div class="cart-main-box">
+        <table class="cart-data-table">
+            <tr class="cart-header-row">
+                <th style="padding: 10px;">Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+            <tr class="item-row">
+                <td style="padding: 15px 0;">
+                    <img src="images/Fabric/beige.jpg" width="50" class="product-image">
+                    Japanese Semiramis
+                </td>
+                <td>810 SAR</td>
+                <td>
+                    <input type="number" value="1" min="1" class="quantity-input">
+                </td>
+                <td>810 SAR</td>
+                <td>
+                    <button class="delete-item-button">Delete</button>
+                </td>
+            </tr>
+        </table>
+
+        <div class="cart-bottom-area">
+            <button class="delete-all-button">Delete All Items</button>
+            <h3 class="total-price-text">Subtotal: 810 SAR</h3>
+            <br><br>
+            <a href="Success.html" style="text-decoration: none;">
+                <button class="checkout-button">Complete Purchase (Buy)</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="back-to-store">
+        <a href="MainFrame.html" class="store-link">Continue Shopping</a>
+    </div>
+
+</body>
+</html>

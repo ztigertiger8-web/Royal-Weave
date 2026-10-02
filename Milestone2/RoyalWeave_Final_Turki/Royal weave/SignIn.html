@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign In</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page-body">
+    <img src="images/logo2.png" alt="logo" width="150">
+    <h1>Sign In</h1>
+    <div class="auth-main-box">
+        <form action="MainFrame.html" method="GET">
+            <p>Enter Your Email: <br>
+                <input type="email" name="email" placeholder="xyz@gmail.com" class="auth-input-field" required >
+            </p>
+            <p>Enter Your Password: <br>
+                <input type="password" name="password" placeholder="*************" class="auth-input-field" required>
+            </p>
+            <div style="margin-top: 25px; text-align: center;">
+                <button type="submit" class="customer-login-button">Sign In as Customer</button>
+                <button type="submit" formaction="admin.html" class="admin-login-button">Sign in as Admin</button>
+            </div>
+        </form>
+    </div>
+    <p style="margin-top: 20px;">
+        Don't have an account yet? <a href="SignUp.html" style="color: #1B263B; font-weight: bold; text-decoration: none;">Create an account</a>
+    </p>
+</body>
+</html>

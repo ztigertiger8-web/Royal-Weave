@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Dashboard</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body-page">
+
+    <div class="header-area">
+        <div>
+            <h2 class="main-title">Royal Weave Hub</h2>
+        </div>
+        <a href="MainFrame.html" target="_blank" class="preview-button">
+            Live Store Preview ↗
+        </a>
+    </div>
+
+    <div class="content-box">
+        <h3 class="gold-side-border">Add New Fabric</h3>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <table cellpadding="10" style="width: 100%;">
+                <tr>
+                    <td width="150"><b>Fabric Name:</b></td>
+                    <td><input type="text" placeholder="e.g. Luxury Japanese Silk" class="input-field"></td>
+                </tr>
+                <tr>
+                    <td><b>Description:</b></td>
+                    <td><textarea placeholder="Texture, Origin, and Length..." class="text-area-field"></textarea></td>
+                </tr>
+                <tr>
+                    <td><b>Price (SAR):</b></td>
+                    <td><input type="number" placeholder="500" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td><b>Stock Quantity:</b></td>
+                    <td><input type="number" placeholder="25" class="price-input"></td>
+                </tr>
+                <tr>
+                    <td><b>Upload Image:</b></td>
+                    <td><input type="file" accept="image/*" class="upload-button"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Publish Product" class="add-button"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div class="content-box">
+        <h3 class="grey-side-border">Manage Existing Inventory</h3>
+        
+        <div style="margin: 15px 0;">
+            <input type="search" placeholder="Search by name or ID..." class="search-field">
+            <button class="search-button">Search</button>
+        </div>
+
+        <table class="inventory-table">
+            <tr class="table-header-row">
+                <th style="padding: 15px;">Current Image</th>
+                <th>Product Details (Edit Mode)</th>
+                <th>Price (SAR)</th>
+                <th>Stock</th>
+                <th>Actions</th>
+            </tr>
+            
+            <tr>
+                <td style="padding: 15px;">
+                    <img src="images/Fabric/beige.jpg" width="60" class="product-image">
+                    <input type="file" style="font-size: 10px; width: 120px;"> <br> <small>(Update Photo)</small>
+                </td>
+                <td style="padding: 10px; text-align: left;">
+                    <b>Name:</b> <input type="text" value="Japanese Semiramis" class="edit-input-style"> <br>
+                    <b>Desc:</b> <textarea class="edit-input-style" style="height: 40px;">Luxury half-stiff fabric, 3.5m length.</textarea>
+                </td>
+                <td>
+                    <input type="text" value="810" class="edit-input-style" style="width: 60px; text-align: center; font-weight: bold;">
+                </td>
+                <td>
+                    <input type="number" value="25" style="width: 60px; text-align: center; border-radius: 10px; border: 1px solid #ccc; padding: 5px;">
+                </td>
+                <td>
+                    <button class="update-button">Update</button>
+                    <br>
+                    <button class="delete-button">Delete</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="logout-footer">
+        <a href="SignIn.html" style="color: #1B263B; text-decoration: none; font-weight: bold;">← Secure Logout</a>
+    </div>
+
+</body>
+</html>
